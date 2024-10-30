@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirat restaurant</title>
+    <link rel="icon" type="image/x-icon" href="logo-removebg-preview.png">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-50">
+    <div class="container mx-auto py-8 flex flex-col items-center">
+        <button id="openPopup" class="bg-blue-400 text-white rounded-full">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+        
+        <img src="logo-removebg-preview.png" alt="Sirat Logo" class="my-6">
+        <h1 class="text-2xl font-bold text-gray-800">Sirat Restaurant</h1>
+        <p class="text-center text-gray-600">Relish your food evenings with winds, rivers & scrumptious delicacies.</p>
+
+        <div class="flex space-x-4 my-4">
+            <a href="#" target="_blank" class="text-2xl text-gray-500"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+91 9876543210" target="_blank" class="text-2xl text-gray-500"><i class="fas fa-phone"></i></a>
+            <a href="mailto:siraat@gmail.com" target="_blank" class="text-2xl text-gray-500"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="space-y-4 w-96   btns p-4">
+            <a href="https://maps.app.goo.gl/s6WmRx5XATpFcP189" target="_blank" class="bg-blue-400 w-full block text-center p-4 rounded-lg text-white  hover:bg-blue-500 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 font-semibold"><i class="fa-solid fa-location-dot"></i> Location</a>
+            <a href="#" target="_blank" class="bg-blue-400 hover:bg-blue-500 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 w-full block text-center hover:bg-blue-500 p-4 rounded-lg text-white font-semibold"><i class="fa-regular fa-star"></i> Review</a>
+            <a href="https://www.zomato.com/surat/siraat-utran" target="_blank" class="bg-blue-400 hover:bg-blue-500 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 w-full block text-center hover:bg-blue-500 p-4 rounded-lg text-white font-semibold"><i class="fa-solid fa-z"></i> Zomato</a>
+            <a href="#" target="_blank" class="bg-blue-400 hover:bg-blue-500 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 w-full block text-center p-4 rounded-lg  hover:bg-blue-500 text-white font-semibold"><i class="fa-solid fa-book-open"></i> Food Menu</a>
+            <a href="#" target="_blank" class="bg-blue-400 hover:bg-blue-500 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 w-full block text-center p-4 rounded-lg text-white  hover:bg-blue-500 font-semibold"><i class="fa-solid fa-book-open"></i> Celebration Menu</a>
+        </div>
+    </div>
+
+    <div id="popup" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center relative">
+            <button id="closePopup" class="absolute top-2 right-2 bg-blue-400 text-white rounded-full p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h2 class="text-xl font-bold mb-4">Share this Bio Link</h2>
+            <img src="qrcode.png" alt="QR Code" class="mx-auto mb-4">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-blue-500"><i class="fab fa-twitter"></i> Share on Twitter</a>
+                <a href="#" class="text-blue-500"><i class="fab fa-facebook"></i> Share on Facebook</a>
+                <a href="#" class="text-blue-500"><i class="fas fa-envelope"></i> Share via Email</a>
+            </div>
+            <input type="text" class="w-full mt-4 p-2 border border-gray-300 rounded" value="https://bio.link/larivera" readonly>
+            <button class="bg-blue-400 text-white font-semibold py-2 px-4 rounded mt-4">Copy</button>
+        </div>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
